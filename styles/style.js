@@ -64,14 +64,14 @@ function handleTouchEnd(event) {
   const diffY = initialY - currentY;
 
   if (diffY > 0) {
-    // Swipe ke atas
+    // Swipe ke atas mobile
     if (event.target.classList.contains("value1")) {
       team1Score.textContent = parseInt(team1Score.textContent) + 1;
     } else if (event.target.classList.contains("value2")) {
       team2Score.textContent = parseInt(team2Score.textContent) + 1;
     }
   } else {
-    // Swipe ke bawah
+    // Swipe ke bawah mobile
     if (event.target.classList.contains("value1")) {
       if (team1Score.textContent > 0) {
         team1Score.textContent = parseInt(team1Score.textContent) - 1;
