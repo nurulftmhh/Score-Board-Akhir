@@ -13,6 +13,7 @@
     line-height: 95px;
     text-align: center;
     color: #FFFFFF;
+    overflow: hidden;
 }
 
 .container, .foot_container{
@@ -109,8 +110,7 @@
 
 @media screen and (max-width: 600px) {
     .container {
-    height: 90%;
-    min-height: 94%;
+    height: aut0;
     font-size: 50px;
     line-height: 65px;
     }
