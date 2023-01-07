@@ -24,10 +24,15 @@ function handlePointerUp(event) {
   if (diffY > 0) {
     // Swipe ke atas
     if (event.target.classList.contains("value1")) {
-      team1Score.textContent = parseInt(team1Score.textContent) + 1;
+      if (team1Score.textContent < 21) {
+        team1Score.textContent = parseInt(team1Score.textContent) + 1;
+      }
     } else if (event.target.classList.contains("value2")) {
-      team2Score.textContent = parseInt(team2Score.textContent) + 1;
+      if (team2Score.textContent < 21) {
+        team2Score.textContent = parseInt(team2Score.textContent) + 1;
+      }
     }
+    
   } else {
     // Swipe ke bawah
     if (event.target.classList.contains("value1")) {
@@ -66,10 +71,15 @@ function handleTouchEnd(event) {
   if (diffY > 0) {
     // Swipe ke atas mobile
     if (event.target.classList.contains("value1")) {
-      team1Score.textContent = parseInt(team1Score.textContent) + 1;
+      if (team1Score.textContent < 21) {
+        team1Score.textContent = parseInt(team1Score.textContent) + 1;
+      }
     } else if (event.target.classList.contains("value2")) {
-      team2Score.textContent = parseInt(team2Score.textContent) + 1;
+      if (team2Score.textContent < 21) {
+        team2Score.textContent = parseInt(team2Score.textContent) + 1;
+      }
     }
+    
   } else {
     // Swipe ke bawah mobile
     if (event.target.classList.contains("value1")) {
