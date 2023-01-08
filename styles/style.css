@@ -13,7 +13,6 @@
     line-height: 95px;
     text-align: center;
     color: #FFFFFF;
-    overflow: hidden;
 }
 
 .container, .foot_container{
@@ -70,6 +69,8 @@
     padding: 6px;
     font-size: 10px;
     font-weight: 400;
+    line-height: 12px;
+    letter-spacing: -0.01em;
 }
 
 .team2>.player>.player_position{
@@ -87,12 +88,16 @@
     padding: 6px;
     font-size: 10px;
     font-weight: 400;
+    text-align: right;
+    line-height: 12px;
+    letter-spacing: -0.01em;
 }
 
 .foot_container{
     /* height: 10vh; */
     margin: auto;
     padding: auto;
+    line-height: 12px;
 }
 
 @media screen and (min-width: 600px) {
@@ -100,17 +105,19 @@
         height: 90%;
         min-height: 94%;
         font-size: 70px;
-        line-height: 95px;
+        line-height: 97px;
+        letter-spacing: -0.01em;
       }
     
-      .value1, .value2 {
+    .value1, .value2 {
         font-size: 80px;
       }
   }
 
 @media screen and (max-width: 600px) {
     .container {
-    height: aut0;
+    height: 90%;
+    min-height: 94%;
     font-size: 50px;
     line-height: 65px;
     }
@@ -118,4 +125,6 @@
     .value1, .value2 {
     font-size: 60px;
     }
-    }
+  }
+
+  
